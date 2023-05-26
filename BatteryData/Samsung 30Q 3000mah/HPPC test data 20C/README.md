@@ -9,3 +9,4 @@
 # Notes from Austin, delete when addressed. 
 1. Update the LabVIEW code so the time and and dates automatically fill up. 
 1. Update the LabVIEW code so there is a comment at the top of the LVM file that tells us the measured parameters in the LVM file.   
+1. Why does the time go backwards in a few spots? This messes up the data. 
