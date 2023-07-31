@@ -1,4 +1,5 @@
-#Some of these might not work intially. You may have to install them on your Python Complier
+#Some of these might not work intially. You may have to install them on your Python Complier. This code was made to work with our ordinary constant current discharge test.
+#It may not work if it is combined with a different test.
 import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
