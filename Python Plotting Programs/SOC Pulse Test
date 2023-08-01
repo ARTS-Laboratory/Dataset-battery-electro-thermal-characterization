@@ -28,7 +28,7 @@ plt.legend(["Chamber Temperature", "Battery Temperature"])
 plt.title("Battery Temperature")
 plt.xlabel("Time (hrs)")
 plt.ylabel("Temperature (°C)")
-plt.savefig("Temperature Graph.png")
+plt.savefig("Temperature Graph X°C.png")
 
 
 fig2 = plt.figure()
@@ -36,7 +36,7 @@ plt.plot(time, voltage)
 plt.title("Voltage")
 plt.xlabel("Time (hrs)")
 plt.ylabel("Voltage (V)")
-plt.savefig("Voltage Graph.png")
+plt.savefig("Voltage Graph X°C.png")
 
 #use PdfPages to combine the plots into a single PDF file and then saving it
 plots = PdfPages('SOC Experiment Graphs.pdf')
