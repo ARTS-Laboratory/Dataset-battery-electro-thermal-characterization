@@ -39,7 +39,7 @@ plt.ylabel("Voltage (V)")
 plt.savefig("Voltage Graph X°C.png")
 
 #use PdfPages to combine the plots into a single PDF file and then saving it
-plots = PdfPages('SOC Experiment Graphs.pdf')
+plots = PdfPages('SOC Graphs X°C.pdf')
 plots.savefig(fig1)
 plots.savefig(fig2)
 plots.close()
