@@ -1,0 +1,46 @@
+#This python code is for plotting the SOC pulse discharge tests. It uses the both the 10% SOC and the 5% SOC cycle .txt files at once.
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+
+#importing data from .txt files as an array
+#column order is (0) time, (1) Current, (2) Voltage, (3) Power, (4) Battery Temp, and (5) Chamber Temp
+tenSOCdata = np.loadtxt('10%SoCsteps_5_16_23.txt', delimiter="\t", skiprows=13)
+fiveSOCdata = np.loadtxt('5SOCcyle2.txt', delimiter="\t", skiprows=13)
+preWait = np.loadtxt('Prewait_1.txt', delimiter="\t", skiprows=13)
+
+#adding the time of the 10% SOC data to the 5% SOC data to show that the 5% test immediately follows the 10% test
+tenTimeStart = (max(preWait[:,0]))
+tenSOCdata[:,0] = tenSOCdata[:,0] + tenTimeStart
+fiveTimeStart = (max(tenSOCdata[:,0]))
+fiveSOCdata[:,0] = fiveSOCdata[:,0] + fiveTimeStart
+print(preWait[0])
+#creating variables for time, voltage, and temperature by appending the 5% SOC data to the 10% SOC data
+time = np.concatenate([preWait[:,0],tenSOCdata[:,0],fiveSOCdata[:,0]])
+timeTrue = np.sort(time)
+voltage = np.concatenate([preWait[:,2],tenSOCdata[:,2],fiveSOCdata[:,2]])
+batteryTemp = np.concatenate([preWait[:,4],tenSOCdata[:,4], fiveSOCdata[:,4]])
+chamberTemp = np.concatenate([preWait[:,5],tenSOCdata[:,5], fiveSOCdata[:,5]])
+
+timeTrue=timeTrue/3600
+
+
+#plotting temperature and voltage figures
+fig1 = plt.figure()
+plt.plot(timeTrue, chamberTemp, color = "tab:blue")
+plt.plot(timeTrue, batteryTemp, color = "tab:red")
+plt.legend(["Chamber Temperature", "Battery Temperature"])
+plt.title("Battery Temperature vs. Time at X°C")
+plt.xlabel("Time (hrs)")
+plt.ylabel("Temperature (°C)")
+plt.savefig("Temperature Graph X°C.png")
+plt.close()
+
+fig2 = plt.figure()
+plt.plot(timeTrue, voltage)
+plt.title("Voltage vs. Time at X°C")
+plt.xlabel("Time (hrs)")
+plt.ylabel("Voltage (V)")
+plt.savefig("Voltage Graph X°C.png")
+plt.close()
+
