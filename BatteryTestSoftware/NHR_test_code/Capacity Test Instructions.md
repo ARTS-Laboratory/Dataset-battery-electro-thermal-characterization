@@ -18,10 +18,13 @@
 12. Use flashdrive from NHR folder to download Labview drivers onto computer
 
 # Running the Capacity tests
-12. Open Capacity Test.vi
-13. Once opened in Labview, under VISA resource name select IP address of NHR module
-14. Under DAQ task, select BatteryTemp
-15. set Current Set Point to C value you want to test
-16. set discharge Voltage set point to 2.75 V for 18650 cells
-17. In Write to Measurement File, under filename, select the path you want to save the test data to
-18. Under output safety, set min/max voltage and current based on the cell and the test you are running
+12. Connect Ethernet cable between computer and NHR Tester
+13. Connect USB of CDAQ to computer
+14. Open NIMAX and run Battery Temp task to verify its at temperature then stop task
+15. Open Capacity Test.vi
+16. Once opened in Labview, under VISA resource name select IP address of NHR module
+17. Under DAQ task, select BatteryTemp
+18. set Current Set Point to C value you want to test
+19. set discharge Voltage set point to 2.75 V for 18650 cells
+20. Press ctr+E In Write to Measurement File, under filename, select the path you want to save the test data to
+21. Under output safety, set min/max voltage and current based on the cell and the test you are running
