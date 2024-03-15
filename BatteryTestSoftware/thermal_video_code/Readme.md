@@ -1,6 +1,0 @@
-# Thermal Video Code
-
-
-
-
-
