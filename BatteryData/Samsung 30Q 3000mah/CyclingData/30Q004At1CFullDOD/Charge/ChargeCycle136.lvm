@@ -1,0 +1,24 @@
+LabVIEW Measurement	
+Writer_Version	2
+Reader_Version	2
+Separator	Tab
+Decimal_Separator	.
+Multi_Headings	No
+X_Columns	One
+Time_Pref	Absolute
+Operator	admin
+Description	Clolumns are: time, Current, Voltage, Power, Battery Temp, and Chamber Temp
+Date	2024/06/12
+Time	14:43:13.4379057884216308594
+***End_of_Header***	
+	
+Channels	6						
+Samples	1	1	1	1	1	1	
+Date	2024/06/12	2024/06/12	2024/06/12	2024/06/12	2024/06/12	2024/06/12	
+Time	14:43:13.4542040824890136719	14:43:13.4602022171020507813	14:43:13.4653534889221191406	14:43:13.4379057884216308594	14:43:13.4379057884216308594	14:43:13.4379057884216308594	
+X_Dimension	Time	Time	Time	Time	Time	Time	
+X0	0.0000000000000000E+0	0.0000000000000000E+0	0.0000000000000000E+0	0.0000000000000000E+0	0.0000000000000000E+0	0.0000000000000000E+0	
+Delta_X	1.000000	1.000000	1.000000	1.000000	1.000000	1.000000	
+***End_of_Header***							
+X_Value	Untitled	Untitled 1	Untitled 2	Untitled 3	Untitled 4	Untitled 5	Comment
+0.000000	0.014342	4.544500	0.065249	20.900876	0.000402	20.796567
