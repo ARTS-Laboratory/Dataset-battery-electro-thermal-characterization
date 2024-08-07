@@ -4,7 +4,7 @@ Dataset for Battery electro-thermal Characterization
 
 
 <table>
-  <caption>Table 1: Colors used to denote state of the dataset </caption>
+  <caption>Table 1: Colors used to denote the state of the dataset </caption>
   <tr>
     <td style="background-color: #ffcccc;">Cell 1</td>
     <td style="background-color: #ccffcc;">Cell 2</td>
