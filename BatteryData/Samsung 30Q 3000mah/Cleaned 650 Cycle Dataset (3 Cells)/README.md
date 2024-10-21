@@ -1,6 +1,6 @@
 # Battery Test Data Overview
 
-This dataset contains charge and discharge data files from 3 independent cells. Each file captures key measurements recorded at ~1 second intervals during the cycling process. The data is structured into seven columns, as outlined below.
+This dataset contains charge and discharge data files from 3 independent cells. Each file captures key measurements recorded at ~1 second intervals during the cycling process. The data is structured into seven columns, as outlined below. This is the first of many long term cycling test, there were several times where cells were either over or undercharged. These issues have been resolved for future tests.
 
 ## Data Columns
 
