@@ -1,1 +1,0 @@
-This folder contains python programs that use the data from each different test in order to create graphs or images of the data.
